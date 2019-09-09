@@ -1,0 +1,36 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            
+<div class="card"  *ngFor="let data of filterdproductdata | productfilter : 'productId' : id ">
+    <div class="card-header bg-primary text-white">Product Details :<span>{{data.productId}} </span>-<span>{{data.product}}</span></div>
+    <div class="card-body">
+
+<div class="row">
+
+  <div class="col-xs-8-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">{{data.product}}</h3>
+        <p class="card-text">Id-<span>{{data.productId}} </span><span>{{data.code}},</span>    <span>{{data.available}},</span>  <span>{{data.price}},</span>  <span>{{data.rating}}</span></p>
+        <div><img src="{{data.productImage}}" width="400px" height="400px"></div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+     
+        <p class="card-text text-white"></p>
+
+        <button class="btn btn-primary">Back</button>
+    </div>
+   
+
+</div>
+        </div>
+    </div>
+</div>
